@@ -1,6 +1,41 @@
 # The Journey
 
-## 2021-09-30 
+## 2021-09-30 8PM
+Got side tracked for ... work.
+
+Got an empty dotnet benchmark project installed. Was a bit surprised because it didn't "run" at first. Turns out someone updated the template a couple years ago, but the runnable version of the template is behind a flag: `--console-app`.
+
+I ran the following to get a project:
+
+`dotnet new benchmark -n Benchmarks --console-app`
+
+Then I added it to the solution with:
+
+`dotnet sln .\src\www_kijana_woodard_com.sln add .\src\Benchmarks\Benchmarks.csproj`
+
+Finally, I successfully ran the benchmarks with:
+
+`make benchmark`
+
+## 2021-09-30 9AM
+Looking at Benchmark dotnet.
+Looking at using Github Actions before netlify.
+
+Getting a bit stuck in a decision loop.
+
+Decided to go down the benchmark rabbit trail.
+
+1. Needed to install the benchmark template first.
+    1. `dotnet new benchmark --search` #just to see what the name is
+    2. `dotnet new --install BenchmarkDotNet.Templates`
+1. `dotnet new benchmark -n Benchmarks`
+
+### Side Quest!
+figuring out how to do nested lists in markdown and seeing the gap between common mark and what's implemented in previews for vscode. that would be a whole other rabbit trail to follow. not sure why two spaces for indentation of the nesting doesn't work. also want to have letters as the indented item label.
+
+Ok. for lettering, it looks like I could just do that with css on the output. https://stackoverflow.com/a/61960060/214073
+
+## 2021-09-30 8AM
 Finally! Made the first commit for my new blog engine.
 
 This has been rattling around in my head for a while.
