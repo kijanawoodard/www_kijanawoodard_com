@@ -17,6 +17,13 @@ Finally, I successfully ran the benchmarks with:
 
 `make benchmark`
 
+### Side Quest!
+
+I want to get graphs out of dotnet benchmark. For that, I need to install the R Programming Language. I can't do that right now becuase the website for r is down.
+https://www.r-project.org/
+
+What are the odds?!?!?
+
 ## 2021-09-30 9AM
 Looking at Benchmark dotnet.
 Looking at using Github Actions before netlify.
